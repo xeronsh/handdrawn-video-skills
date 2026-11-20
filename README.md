@@ -97,6 +97,9 @@ handdrawn-video-skills/
 
 ## 致谢与协议
 
-本项目的导演分层架构、程序化手绘介质与自动化审片思路受益于以下开源项目：**Lemo-Opuscar** · **ClaudeAnimationBase** · **Bang Motion** · **cth9191/animate** · **xiaoma-studio** · **chaojifeng-video-design**。
+本项目的手绘插画规范、导演分层架构、程序化动效与自动化审片思路受益于以下开源项目：
+
+- **手绘插画与小黑系列**：[ian-xiaohei-illustrations](https://github.com/helloianneo/ian-xiaohei-illustrations) · [ian-xiaohei-scenes](https://github.com/helloianneo/ian-xiaohei-scenes) · [personal-ip-scenes](https://github.com/bozhouDev/personal-ip-scenes) · [chengfeng-videocut-skills](https://github.com/Agentchengfeng/chengfeng-videocut-skills)（[chengfeng-videocut-xiaohei](https://github.com/Agentchengfeng/chengfeng-videocut-xiaohei)）
+- **导演架构与代码动效**：[Lemo-Opuscar](https://github.com/lemomo-ai/lemo-opuscar) · [ClaudeAnimationBase](https://github.com/JohnHeibel/ClaudeAnimationBase) · [Bang Motion](https://github.com/bangtutorial/bang-motion) · [cth9191/animate](https://github.com/cth9191/animate) · [xiaoma-studio](https://github.com/crawfordxx/xiaoma-studio) · [chaojifeng-video-design](https://github.com/mileson/chaojifeng-video-design) · [huashu-art-motion](https://github.com/alchaincyf/huashu-art-motion) · [onetake](https://github.com/feitangyuan/onetake) · [anidoodle](https://github.com/alexgreensh/anidoodle) · [explainroo](https://github.com/vincentsch/explainroo) · [story-to-handdrawn-video](https://github.com/gnipbao/story-to-handdrawn-video)
 
 基于 **[MIT License](LICENSE)** 开源（`Copyright (c) 2026 xeronsh`）。
