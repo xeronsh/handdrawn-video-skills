@@ -19,7 +19,8 @@ __pycache__/
 *.wav
 *.mp3
 *.png
-# Keep documentation preview assets if added later:
+# Keep documentation preview assets:
+!docs/assets/*.webp
 # !docs/assets/**/*.png
 
 # OS, environment & logs
