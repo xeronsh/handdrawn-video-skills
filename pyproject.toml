@@ -1,0 +1,41 @@
+[project]
+name = "handdrawn-video-skills"
+version = "1.0.0"
+description = "End-to-end 4-skill AI hand-drawn animated explainer video workflow (PyCairo dip-pen, watercolor wash, stereo Lo-Fi BGM, vowel-aligned subtitles, dual covers) for Gemini Web Tasks, Claude Code, Codex, and local uv."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+    { name = "xeronsh" },
+]
+keywords = [
+    "gemini",
+    "skills",
+    "pycairo",
+    "handdrawn",
+    "animation",
+    "video-generation",
+    "watercolor",
+    "selfmedia",
+]
+dependencies = [
+    "pycairo>=1.26.0",
+    "numpy>=1.26.0",
+    "opencv-python-headless>=4.9.0",
+    "pillow>=10.3.0",
+    "pydub>=0.25.1",
+    "scipy>=1.13.0",
+]
+
+[project.optional-dependencies]
+fonts = [
+    "fonttools>=4.51.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/xeronsh/handdrawn-video-skills"
+Repository = "https://github.com/xeronsh/handdrawn-video-skills"
+Issues = "https://github.com/xeronsh/handdrawn-video-skills/issues"
+
+[tool.uv]
+package = false

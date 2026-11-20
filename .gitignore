@@ -1,0 +1,29 @@
+# Build & packaged skill zips
+dist/
+build/
+*.egg-info/
+
+# Python & uv
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+.uv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Rendered media & temporary production artifacts
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.png
+# Keep documentation preview assets if added later:
+# !docs/assets/**/*.png
+
+# OS, environment & logs
+.DS_Store
+.env
+.env.*
+*.log

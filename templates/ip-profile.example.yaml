@@ -1,0 +1,121 @@
+# =============================================================================
+# IP & Platform Profile Template (`ip-profile.example.yaml`)
+# =============================================================================
+# Copy this file to `ip-profile.yaml` (or pass its contents in your Gemini Web
+# Tasks / Agent prompt) to adapt the entire 4-skill video production workflow
+# to your own mascot, color palette, voiceover, and target platform.
+#
+# Compatible with `BrandConfig.from_file("ip-profile.yaml")` in
+# `skills/handdrawn-motion/scripts/cairo_handdrawn.py` (works with or without
+# PyYAML installed).
+# =============================================================================
+
+brand:
+  # Public creator / studio name used in calligraphic signatures and credits
+  name: "InkCraft"
+  # Subtle corner watermark rendered on frames when `global_brand_wm=True`
+  watermark_text: "InkCraft"
+  # Optional channel tagline used in copy/description bundles
+  tagline: "手绘视觉化讲透复杂工程与方法论"
+
+mascot:
+  # Character display name referenced in storyboards and illustration prompts
+  name: "Ink Mascot"
+  # Species / archetype (e.g. minimalist ink cat, geometric owl, ink fox, studio bot)
+  species: "minimalist solid-ink cat"
+  # Core personality & acting tone (keep deadpan/expressive for high recognizability)
+  personality: "composed, sharp-eyed, deadpan geek operator"
+  # Primary silhouette body fill hex
+  primary_hex: "#0D0D0D"
+  # Signature eye color hex (paired with accent_hex by default)
+  eye_hex: "#2EE59D"
+  # Secondary anatomical accent (e.g., muted grey-purple inner ears / scarf / beak)
+  inner_ear_hex: "#6E6378"
+  # Exact visual lock injected into Mode 1.0 / 2.0 / 3.0 image-gen prompts
+  visual_lock_prompt: >-
+    minimalist solid-ink (#0D0D0D) hand-drawn studio mascot with sharp upright
+    triangular ears featuring muted grey-purple (#6E6378) inner ears, flat-topped
+    half-lidded bright mint-green (#2EE59D) aloof geek eyes with vertical slit
+    pupils, tiny dark-grey nose, two short whiskers per cheek, compact silhouette
+    (no clothes), and expressive curved tail
+  # Props that break silhouette proportions (avoid in storyboards & motion scenes)
+  forbidden_props:
+    - "two-wheeled crank bicycles that stretch chibi legs unnaturally"
+    - "photorealistic SaaS UI screenshots"
+
+palette:
+  # Hero highlight / threshold payoff color ("one color means one thing")
+  accent_hex: "#2EE59D"
+  # Cold-press watercolor paper base for v11.1 motion & Mode 3.0 covers
+  paper_hex: "#FAF8F3"
+  # Warm sumi-ink primary line color
+  ink_hex: "#151618"
+
+voiceover:
+  # Runtime TTS backend ("gemini_web_tasks" | "google_cloud" | "edge_tts" | "elevenlabs")
+  provider: "gemini_web_tasks"
+  language_code: "cmn-CN"
+  # Single-take studio narrator voice (never mix multiple voices or apply atempo)
+  voice_name: "Puck"
+  # Explicit breath-valley cue embedded between acts and clauses
+  pause_tag: "<short pause>"
+  max_duration_sec: 300
+
+platform:
+  # Primary platform preset: "douyin" | "bilibili" | "xiaohongshu" | "youtube"
+  preset: "douyin"
+  # Secondary platforms for ready-to-paste copy/chapter bundles
+  secondary_platforms:
+    - "bilibili"
+  # Mandatory cover aspect ratios (generate first, then pass as image_references to second)
+  cover_ratios:
+    - "3:4"
+    - "4:3"
+  # Cover visual mode: "mode_1_editorial_white" | "mode_2_watercolor_scene" | "mode_3_chibi_watercolor"
+  cover_mode: "mode_3_chibi_watercolor"
+  # Enable platform pre-audit scrub before TTS & rendering
+  compliance_shield: true
+  # Remind creator to enable platform AI-generated disclosure toggle
+  ai_disclosure_required: true
+  # Optional custom domain term replacements applied during script audit
+  custom_scrub_rules:
+    - "别赌博梭哈 -> 千万别上头梭哈"
+    - "绕过风控 -> 本地隔离环境稳定运行"
+
+subtitles:
+  # v11.1 safe-zone baseline (keeps stage props above y=850 and ink density <16%)
+  baseline_y: 956
+  font_size_px: 40
+  # Highlighted with accent_hex pill & underline when matched in spoken subtitles
+  highlight_keywords:
+    - "Vibe Coding"
+    - "Claude Code"
+    - "Cursor"
+    - "DeepSeek"
+    - "MCP"
+    - "RAG"
+    - "Harness 工程"
+    - "Personal Agent"
+    - "SOP"
+    - "Skill"
+    - "临界点"
+    - "复利飞轮"
+    - "可复用模块"
+    - "工作流"
+    - "效率杠杆"
+    - "第一性原理"
+    - "深度思考"
+    - "评论区聊聊"
+
+audio:
+  # v11.1 stereo Karplus-Strong Lo-Fi BGM ducking gains
+  bgm_speech_gain: 0.28
+  bgm_pause_gain: 0.58
+  bpm: 88
+
+fonts:
+  # Leave empty for automatic cross-OS discovery (env vars -> Debian Noto -> Linux/macOS/Windows)
+  # Or override via HANDDRAWN_FONT_REGULAR / HANDDRAWN_FONT_BOLD / HANDDRAWN_FONT_SERIF
+  regular: ""
+  bold: ""
+  serif_bold: ""
